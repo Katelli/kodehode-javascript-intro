@@ -15,8 +15,6 @@ Read the terminal output before and after to see the difference
 ******************************************************************************/
 
 export function start() {
-  //your code here
-  // return true
   return true
 };
 
@@ -33,7 +31,6 @@ HINT: Use the modulo operator (%) Google it! 😊
 ******************************************************************************/
 
 export const oddOrEven = (n) => {
-  //your code here
   if (n % 2 == 0){
     return "Even"
   } else {
@@ -53,8 +50,8 @@ Example: "This is cool" should return "THIS IS COOL!"
 
 ******************************************************************************/
 
-export function makeMeLoud() {
-  //your code here
+export function makeMeLoud(string) {
+  return string.toUpperCase() + "!"
 }
 
 /******************************************************************************
