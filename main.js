@@ -150,8 +150,9 @@ Use array methods to do the following:
  Return the resulting array.
 ******************************************************************************/
 
-export function marvelEditor() {
-  //your code here
+export function marvelEditor(hero) {
+  hero.splice(0, 4, "Captain America", "Skrull");
+  return hero.join("💪")
 }
 
 /******************************************************************************
@@ -181,8 +182,24 @@ Return "😎Primitive values only😎"
 
 ******************************************************************************/
 
-export function coolMaker() {
-  //your code here
+export function coolMaker(value) {
+  switch (typeof value) {
+    case "string":
+      return `😎${value}😎`;
+  
+    case "number":
+      let number = value * 2
+      return `😎${number}😎`;
+    
+    case "boolean":
+      if (value === true) {
+        return "😎Yeah😎"
+      } else {
+        return "😎Chill😎"
+      }
+      default:
+        return "😎Primitive values only😎"
+  }
 }
 
 /******************************************************************************
